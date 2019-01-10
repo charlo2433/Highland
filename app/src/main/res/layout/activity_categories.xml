@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Guard.Activity_Categories">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/guard"
+                        app:civ_border="true"
+                        app:civ_border_width="3dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_radius="0" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="34dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:text="Driver:"
+
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ID Number:"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Vehicle ID:"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Vehicle ID:"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/checkitem"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/checkitems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="168dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="Check all items leaving in the track"
+                        android:textColor="#2699FB"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="137dp"
+                    android:text="CATEGORY 1" />
+
+                <Button
+                    android:id="@+id/button15"
+                    android:layout_width="166dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="59dp"
+                    android:text="CHECK/UNCHECK ALL"
+                    android:background = "@drawable/rounded_button"
+                    android:textColor="#FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="110dp"
+                        android:layout_weight="1"
+                        android:text="ITEM" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="110dp"
+                        android:layout_weight="1"
+                        android:text="ITEM" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="110dp"
+                        android:layout_weight="1"
+                        android:text="ITEM" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="35dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="112dp"
+                        android:layout_weight="1"
+                        android:text="ITEM" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="112dp"
+                        android:layout_weight="1"
+                        android:text="ITEM" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="112dp"
+                        android:layout_weight="1"
+                        android:text="ITEM" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/checkitem2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/category2"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="137dp"
+                    android:text="CATEGORY2" />
+
+                <Button
+                    android:id="@+id/btncheck2"
+                    android:layout_width="166dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="38dp"
+                    android:text="CHECK/UNCHECK ALL"
+                    android:background = "@drawable/rounded_button"
+                    android:textColor="#FFFFFF" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="35dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/item7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        android:layout_weight="1"
+                        android:text="ITEM" />
+
+                    <CheckBox
+                        android:id="@+id/item8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        android:layout_weight="1"
+                        android:text="ITEM" />
+
+                    <CheckBox
+                        android:id="@+id/item9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        android:layout_weight="1"
+                        android:text="ITEM" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/item10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        android:layout_weight="1"
+                        android:text="ITEM" />
+
+                    <CheckBox
+                        android:id="@+id/item11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        android:layout_weight="1"
+                        android:text="ITEM" />
+
+                    <CheckBox
+                        android:id="@+id/item12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        android:layout_weight="1"
+                        android:text="ITEM" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnsubmit"
+                    android:layout_width="166dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="175dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="SUBMIT"
+                    android:textColor="#FFFFFF" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
